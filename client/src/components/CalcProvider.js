@@ -20,10 +20,6 @@ let socket;
 
 const sendChatAction = (value) => {
     socket.emit('chat message', value);
-
-    if(socket.emit('disconnect')) {
-        return socket.off();
-    }
 }
 
 const CalcProvider = props => {
