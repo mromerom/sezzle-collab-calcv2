@@ -42,7 +42,7 @@ const CalcProvider = props => {
     }, [allCalculations]);
 
     if(!socket) {
-        socket = io(':3001');
+        socket = io('https://sezzle-collab-calc-v2.herokuapp.com/');
         socket.on('chat message', function(msg){
             dispatch({type: 'RECEIVE_MESSAGE', payload: msg})
         });
