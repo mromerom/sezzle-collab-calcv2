@@ -70,18 +70,6 @@ const CalcProvider = props => {
         handleClearValue();
     };
 
-    // custom hook; takes care of storing calculations locally between sessions
-    function useLocalState(localItem) {
-        
-        const [local, setState] = useState(localStorage.getItem(localItem));
-
-        function setLocal(newItem) {
-            localStorage.setItem(localItem, newItem);
-            setState(newItem);
-        }
-        return [local, setLocal];
-    }
-
     return (
         <CalcContext.Provider
             value={{
