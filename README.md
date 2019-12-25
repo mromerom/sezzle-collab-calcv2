@@ -1,7 +1,7 @@
 # Sezzle Calc
 
 
-This project was a (language agnostic) coding challenge given to me by Sezzle. It's a calculator that allows multiple users to remotely make basic calculations and display the results for anyone else connected to see. It can be thought of as a WebSocket-based chat React app where the only form of communication is math operations. A live version of the project can be found at https://sezzle-collab-calc.netlify.com/
+This full-stack project was a (language agnostic) coding challenge given to me by Sezzle. It is a calculator that allows multiple users to remotely make basic calculations and display the results for anyone else connected to see. It can be thought of as a WebSocket-based chat React app where the only form of communication is math operations. A live version of the project can be found at https://sezzle-collab-calc.netlify.com/
 The original version of the project is [here.](https://github.com/mromerom/sezzle-collab-calc) There are very small differences between the two, and those were done for hosting/deployment purposes.
 
 ![Sezzle Calc Demo](demo/sezzle-calc-demo.gif)
@@ -22,4 +22,4 @@ The project is split up into a small backend built in node.js and using [Socket.
 
 ## Hosting and Deployment
 
-The backend was deployed using [Heroku](https://heroku.com) and the frontend was deployed using [Netlify](https://www.netlify.com). To deploy to Netlify, it's necessary to create a build of the application's frontend, and upload that.
+The backend was deployed using [Heroku](https://heroku.com) and the frontend was deployed using [Netlify](https://www.netlify.com). To deploy to Heroku it is sometimes necessary to create a [Procfile](https://devcenter.heroku.com/articles/procfile), in which the default language of the project being uploaded is specified. Additionally, when deploying to Netlify, it may necessary to create a build of the application and upload that instead of the entire project (as was the case with the frontend of this application).
