@@ -17,7 +17,7 @@ The original version of the project is [here.](https://github.com/mromerom/sezzl
 
 ## Meeting the Specifications
 
-The project is split up into a small backend built in node.js and using [Socket.IO](https://socket.io); and a frontend built using React and implementing [Hooks](https://reactjs.org/docs/hooks-reference.html) and [Context](https://reactjs.org/docs/context.html#when-to-use-context) as a solution for state management. Calculations are stored in a state array, and Socket.IO is used to allow real-time rendering of calculations across clients. Limiting the calculations displayed to 10 was done using `.slice`. There was no expectation or specification to allow user account creation; to avoid setting up a database and all the work that comes with that, calculations were maintained between sessions using client-side local storage in the browser.
+The project is split up into a small backend built in node.js and using [Socket.IO](https://socket.io); and a frontend built using React and implementing [Hooks](https://reactjs.org/docs/hooks-reference.html) and [Context](https://reactjs.org/docs/context.html#when-to-use-context) as a solution for state management. Calculations are stored in a state array and updated with the `useReducer` hook; and Socket.IO is used to allow real-time rendering of calculations across clients. Limiting the calculations displayed to 10 was done using `.slice`. There was no expectation or specification to allow user account creation; to avoid setting up a database and all the work that comes with that, calculations were maintained between sessions using client-side local storage in the browser.
 
 
 ## Hosting and Deployment
