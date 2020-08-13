@@ -30,7 +30,4 @@ io.on('connection', function(socket){
 
 app.use(router);
 
-// http.listen(3001, function(){
-//   console.log('listening on *:3001');
-// });
 server.listen(process.env.PORT || 3000, () => console.log(`Server has started.`));
